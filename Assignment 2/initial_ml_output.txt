@@ -1,0 +1,38 @@
+Overall y:
+Is_laundering
+0    0.998961
+1    0.001039
+Name: proportion, dtype: float64
+
+Train Set:
+Is_laundering
+0    0.998959
+1    0.001041
+Name: proportion, dtype: float64
+
+Test Set:
+Is_laundering
+0    0.998985
+1    0.001015
+Name: proportion, dtype: float64
+
+Logistic Regression Accuracy:
+0.9989899903838668
+
+Logistic Regression Confusion Matrix:
+[[1.         0.        ]
+ [0.99481865 0.00518135]]
+
+CART Accuracy:
+0.9990615327316762
+
+CART Confusion Matrix:
+[[1.         0.        ]
+ [0.92435233 0.07564767]]
+
+Random Forest Accuracy:
+0.9989847299171161
+
+Random Forest Confusion Matrix:
+[[1. 0.]
+ [1. 0.]]
