@@ -1,0 +1,140 @@
+Approach 1: Class Weights
+
+Checking y distribution:
+
+Overall y:
+Is_laundering
+0    0.998961
+1    0.001039
+Name: proportion, dtype: float64
+
+Train Set:
+Is_laundering
+0    0.998957
+1    0.001043
+Name: proportion, dtype: float64
+
+Test Set:
+Is_laundering
+0    0.998997
+1    0.001003
+Name: proportion, dtype: float64
+
+Logistic Regression Accuracy:
+0.8329138987844114
+
+Logistic Regression Confusion Matrix:
+[[0.83313481 0.16686519]
+ [0.38719832 0.61280168]]
+
+Logistic Regression Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.83      0.91    949533
+           1       0.00      0.61      0.01       953
+
+    accuracy                           0.83    950486
+   macro avg       0.50      0.72      0.46    950486
+weighted avg       1.00      0.83      0.91    950486
+
+
+CART Accuracy:
+0.8281184572944789
+
+CART Confusion Matrix:
+[[0.82830823 0.17169177]
+ [0.36096537 0.63903463]]
+
+CART Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.83      0.91    949533
+           1       0.00      0.64      0.01       953
+
+    accuracy                           0.83    950486
+   macro avg       0.50      0.73      0.46    950486
+weighted avg       1.00      0.83      0.91    950486
+
+
+Random Forest Accuracy:
+0.8310906210086209
+
+Random Forest Confusion Matrix:
+[[0.83132129 0.16867871]
+ [0.39874082 0.60125918]]
+
+Random Forest Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.83      0.91    949533
+           1       0.00      0.60      0.01       953
+
+    accuracy                           0.83    950486
+   macro avg       0.50      0.72      0.46    950486
+weighted avg       1.00      0.83      0.91    950486
+
+
+
+Approach 2: Undersampling
+
+Checking y distribution:
+
+Train Set:
+Is_laundering
+0    0.5
+1    0.5
+Name: proportion, dtype: float64
+
+Logistic Regression (Undersampled) Accuracy:
+0.8268359555006597
+
+Logistic Regression (Undersampled) Confusion Matrix:
+[[0.82703919 0.17296081]
+ [0.37565582 0.62434418]]
+
+Logistic Regression (Undersampled) Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.83      0.91    949533
+           1       0.00      0.62      0.01       953
+
+    accuracy                           0.83    950486
+   macro avg       0.50      0.73      0.46    950486
+weighted avg       1.00      0.83      0.90    950486
+
+
+CART (Undersampled) Accuracy:
+0.8299375266968687
+
+CART (Undersampled) Confusion Matrix:
+[[0.83013439 0.16986561]
+ [0.36621196 0.63378804]]
+
+CART (Undersampled) Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.83      0.91    949533
+           1       0.00      0.63      0.01       953
+
+    accuracy                           0.83    950486
+   macro avg       0.50      0.73      0.46    950486
+weighted avg       1.00      0.83      0.91    950486
+
+
+Random Forest (Undersampled) Accuracy:
+0.8305887724806047
+
+Random Forest (Undersampled) Confusion Matrix:
+[[0.83081894 0.16918106]
+ [0.39874082 0.60125918]]
+
+Random Forest (Undersampled) Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.83      0.91    949533
+           1       0.00      0.60      0.01       953
+
+    accuracy                           0.83    950486
+   macro avg       0.50      0.72      0.46    950486
+weighted avg       1.00      0.83      0.91    950486
+
